@@ -1,4 +1,5 @@
 # variable
+
 # integer is of two types. they are primitive and non-primitive
 
 # primitive data type
@@ -49,6 +50,25 @@ print(setd)
 dictionary1 = { "Name" : "Divya","Age" : 29,"Location" : "Perambur"}
 print(dictionary1)
 
+# Functions in the list are
+# ~~~~~~~~~~~~~~~~~~~~~~~~~
+# list.append ==> This will add the number as a last number. examples are given below
+# list.insert ==> what this will do is, if we give the number in the paranthesis (i.e, (5,100) here the  "100" will be added in the fifth index.
+# list.remove ==> This will remove the number in the paranthesis (i.e, (100) here the number 100 is given. so that "100" will be removed from the list. Example is given below)
+# list.pop ==> This also will remove the number but here we could give the index number. (i.e, (5) if we give like this the 5th index number will get delete) if we give empty parathesis like this () then last 
+# number from the list will be deleted
+# list.sort
+# list.sort(reverse = True)
+# list.count ==> This will give the count of the given number inside the paranthesis "(10)" if the "10" is one time in the list then the answer will be printed as "1". This is the function of list.count
+# list.index ==> This will give the index of the number inside the paranthesis 
+# list.clear ==> this will clear the list
+
+# Here the list.remove will remove the given number in the paranthesis. In list.remove we could just give the number which we need to remove. We could not give the Index
+# where as in list.pop we can give the index of the number. if we didnt give any of the index number inside the paranthesis. Then that will delete the last number/string which is in the list.
+
+
+# The above mentioned are the list functions and the examples are given below
+
 # List.append - This will add the mentioned number at the last position that also only one number at a strecth
 
 list1 = [1,2,3,4]
@@ -56,6 +76,8 @@ list1.append(100)
 print(list1)
 list1.append(200)
 print(list1)
+list2 = [11,22,33,44,55,12,14]
+print(list2)
 
 # List.insertion - This will add the mentioned number at the given index position
 list1 = [1,2,3,4]
@@ -212,13 +234,27 @@ print(list1)
 list1.sort()
 print(list1.sort)
 
+# ~~~~~
+# Tuple
+# ~~~~~
 
+# Types of tuples are two types they are 
+# Count 
+# index
+# here the answer will be given straightly without print function
 
+tuple1 = (1,3,5,7,9)
+print(tuple1)
+(1, 3, 5, 7, 9)
 
+tuple1 = (1,3,1,4,1,5,7,8,4,)
+print(tuple1)
+(1, 3, 1, 4, 1, 5, 7, 8, 4)
+tuple1.count(1)
+3
 
+# the above example shows that. we need to know the count of the "1".  so we have given number "1" is given inside the paranthesis. the answer is "3". Because in the tuple1 "1" comes three times
 
-
-
-
-
-
+tuple1 = (1,3,1,4,1,5,7,8,4,)
+tuple1.index(5)
+5
